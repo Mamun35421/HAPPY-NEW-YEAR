@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../images/sunrise.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+}
+section{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50x,-50x);
+    animation: floating 15s linear infinite;
+    animation-direction: alternate;
+}
+section h1{
+    font-size: 150px;
+    color: #fff;
+    font-family: 'Tangerine', cursive;
+    text-shadow: -9px 10px 1px #2322226b;
+}
+
+@keyframes floating{
+    0%{
+        left: 29%;
+
+    }
+    25%{
+        top: 29%;
+
+    }
+    75%{
+        left: 31%;
+
+    }
+    100%{
+        top: 51%;
+
+    }
+}
+
+
+.slider{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    width: auto;
+    
+}
+.slide-track{
+    animation: scroll 40s linear infinite ;
+    display: flex;
+    width:  calc(250px * 14);
+}
+
+.slider .slide{
+    height:  100px;
+    width:  200px;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 7 ));
+    }
+}
+
+
+.particles-js-canvas-el{
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 80vh;
+}
